@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AI Research Assistant</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>📚 AI Research Assistant</h2>
+
+<form method="POST">
+
+<textarea
+name="research"
+rows="10"
+placeholder="Paste your research paper or paragraph..."
+required></textarea>
+
+<br>
+
+<button>Analyze</button>
+
+</form>
+
+{% if answer %}
+
+<h3>AI Analysis</h3>
+
+<pre>{{answer}}</pre>
+
+{% endif %}
+
+</div>
+
+</body>
+
+</html>
